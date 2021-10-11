@@ -1,0 +1,19 @@
+{
+  "name": "youtube-clone--html-scss",
+  "version": "1.0.0",
+  "description": "\"youtube clone\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franckDev21/youtube-clone--HTML-SCSS-.git"
+  },
+  "author": "Francklin Tiomela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franckDev21/youtube-clone--HTML-SCSS-/issues"
+  },
+  "homepage": "https://github.com/franckDev21/youtube-clone--HTML-SCSS-#readme"
+}
