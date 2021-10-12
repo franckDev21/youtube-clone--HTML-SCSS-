@@ -1,3 +1,45 @@
 .search{
   @include d-flex-b;
+  position: relative;
+  &__input{
+    height: 34px;
+    width: 95%;
+    @include d-flex;
+    box-shadow: 0px 0px 1.5px rgba(238, 238, 238, 0.452);
+    & input{
+      background-color: darken($color: $bg-dark, $amount: 2);
+      outline: none;
+      border: none;
+      height: 34px;
+      padding-left: 10px;
+      font-size: 16px;
+      width: 90%;
+      color: #fff;
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+    }
+    & button{
+      outline: none;
+      border: none;
+      height: 34px;
+      background-color: rgba(255, 255, 255, 0.096);
+      @include d-flex-c;
+      width: calc(100% - 90%);
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 2px;
+      cursor: pointer;
+    }
+  }
+  &__voice{
+    position: absolute;
+    background-color: $bg-dark;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    @include d-flex-c;
+    right: -17px;
+    box-shadow: 0px 0px 3px rgba(238, 238, 238, 0.068);
+  }
 }

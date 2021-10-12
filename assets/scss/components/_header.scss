@@ -1,10 +1,14 @@
 .header{
-  background-color: $bg-m-dark;
+  background-color: #202020;
   @include d-flex-b;
   padding: 10px 20px;
 
   &__logo{
-    
+    font-family: 'Oswald', sans-serif;
+    @include d-flex-c;
+    font-size: 17px;
+    margin-left: 10px;
+    opacity: 9;
   }
 
   &__left{
@@ -14,8 +18,9 @@
   }
 
   &__center{
-    background-color: red;
+    // background-color: red;
     width: 40%;
+    height: 33px;
   }
 
   &__right{
