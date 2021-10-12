@@ -1,0 +1,16 @@
+@mixin d-flex{
+  display: flex;
+  align-items: center;
+}
+@mixin d-flex-b {
+  @include d-flex;
+  justify-content: space-between;
+}
+@mixin d-flex-e {
+  @include d-flex;
+  justify-content: flex-end;
+}
+@mixin d-flex-a {
+  @include d-flex;
+  justify-content: flex-start;
+}
