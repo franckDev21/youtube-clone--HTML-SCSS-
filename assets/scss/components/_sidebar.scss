@@ -1,0 +1,38 @@
+.sidebar{
+  width: 200px;
+  background-color: #202020;
+  padding-top: 20px;
+  &__link{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+      background-color: rgba(128, 128, 128, 0.486);
+    }
+    &--active{
+      background-color: rgba(128, 128, 128, 0.685);
+      &:hover{
+        background-color: rgba(128, 128, 128, 0.685);
+      }
+    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  &__a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  section{
+    position: relative;
+    padding-right: 10px;
+  }
+  &__separ{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: .5px;
+    background-color: rgba(128, 128, 128, 0.712);
+  }
+}
