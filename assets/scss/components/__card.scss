@@ -1,0 +1,59 @@
+.card{
+  &__header{
+    width: 300px;
+    height: 170px;
+    overflow: hidden;
+    @include d-flex;
+    position: relative;
+    img{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+  }
+
+  &__time{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: $bg-dark;
+    padding: 4px 5px;
+    color: #fff;
+  }
+
+  &__profil{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    @include d-flex;
+    position: relative;
+    img{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    margin-right: 10px;
+  }
+  
+  &__title{
+    font-size: 17px;
+  }
+
+  &__chanel,&__info{
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+  }
+
+  &__content{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+}
