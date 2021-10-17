@@ -18,15 +18,33 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+    &--down{
+      &:hover{
+        background-color: transparent;
+      }
+    }
   }
   &__a{
     color: #fff;
     text-decoration: none;
     margin-left: 10px;
+    font-size: 13.5px;
   }
   section{
     position: relative;
     padding-right: 10px;
+  }
+  &__header{
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #979797;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  & > section:nth-child(3){
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   &__separ{
     display: block;
@@ -34,5 +52,10 @@
     margin: 0 auto;
     height: .5px;
     background-color: rgba(128, 128, 128, 0.712);
+  }
+  &__follow{
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
   }
 }
