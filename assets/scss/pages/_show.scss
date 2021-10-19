@@ -1,0 +1,41 @@
+.show{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+  &__content{
+    width: 70%;
+    height: 600px;
+    background-color: rgb(173, 173, 173);
+  }
+
+  &__tag{
+    background-color: rgba(116, 116, 116, 0.397);;
+    color: #fff;
+    &--active{
+      background-color: #fff;
+      color: $bg-dark;
+    }
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 14px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  &__tags{
+    position: relative;
+    .svg{
+      position: absolute;
+      right: 0;
+      // si nombre de tag > 5 , '>' visible
+      display: none;
+    }
+  }
+
+  &__sidebar{
+    width: 28%;
+    // background-color: aquamarine;
+
+  }
+}
