@@ -4,11 +4,13 @@
 @import "./mixin";
 
 // COMPONENTS
+@import "./components/btn";
 @import "./components/search";
 @import "./components/header";
 @import "./components/sidebar";
 @import "./components/content";
-@import "./components/_card";
+@import "./components/card";
+@import "./components/comment";
 
 // PAGES
 @import "./pages/show";

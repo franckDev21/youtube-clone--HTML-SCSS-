@@ -1,0 +1,60 @@
+.btn{
+  display: inline-flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 1rem ;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+
+  &--like{
+    width: 90px;
+    border-bottom:  2px solid #fff;
+  }
+  &--send{
+    text-transform: uppercase;
+    svg{
+      margin-right: 6px;
+    }
+  }
+
+  &--save,
+  &--cancel{
+    padding: 0.8em 1rem;
+    font-weight: bold;
+    color: gray;
+    border-radius: .1rem;
+  }
+
+  &--save{
+    background-color: lighten($color: $bg-m-dark, $amount: 10);
+  }
+
+  &--emoji{
+    padding: 7px;
+    background-color: lighten($color: $bg-m-dark, $amount: 10);
+    border-radius: 50%;
+  }
+
+  &--active{
+    background-color: royalblue;
+    color: #fff;
+  }
+  svg{opacity: .8;}
+
+  &--follow{
+    font-size: 13px;
+    background-color: #c00;
+    color: #fff;
+    padding: .8rem .9rem;
+    border-radius: .1rem;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    font-weight: bold;
+    letter-spacing: .3px;
+  }
+}

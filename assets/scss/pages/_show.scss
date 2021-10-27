@@ -3,7 +3,109 @@
   padding-left: 20px;
   padding-right: 20px;
   justify-content: space-between;
+
+  &__like{
+    right: 4px;
+    bottom: 10px;
+    position: absolute;
+    display: inline-flex;
+    align-items: flex-end; 
+  }
+
+  &__description{
+    padding: 1.1rem 1.4rem;
+    position: relative;
+    &::after{
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: .2px;
+      background-color: grey;
+      opacity: .3;
+      bottom : 2px;
+      left: 0;
+      right: 0;
+    }
+    margin-bottom: 30px;
+  }
+
+  &__desc{
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 500px;
+    width: 100%;
+    opacity: .9;
+    padding-bottom: 14px;
+  }
+
+  &__shanel{
+    display: flex;
+    position: relative;
+    
+  }
+
+  &__name{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 10px;
+    span:first-child{
+      line-height: 1.8;
+    }
+    span:last-of-type{
+      font-size: 13px;
+      color: lighten($color: $bg-m-dark, $amount: 40);
+    }
+  }
+
+  &__profil{
+    flex: none;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    border-radius: 50%;
+    @include d-flex;
+    position: relative;
+    img{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    margin-right: 10px;
+  }
   
+  &__header{
+    padding-bottom: 25px;
+    position: relative;
+    &::after{
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: .2px;
+      background-color: grey;
+      opacity: .3;
+      bottom : 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &__title{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 10px 0;
+  }
+
+  &__vue{
+    font-size: .9rem;
+    color: lighten($color: $bg-m-dark, $amount: 37);
+  }
+
   &__subjection{
     margin-top: 20px;
   }
@@ -23,6 +125,9 @@
       width: 0;
       opacity: 0;
     }
+    &__time{
+      font-size: 10px;
+    }
     &__content{
       margin-top: 0;
       margin-left: 10px;
@@ -39,8 +144,24 @@
 
   &__content{
     width: 70%;
+  }
+
+  &__screen{
     height: 600px;
-    background-color: rgb(173, 173, 173);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform .4s ease-in-out;
+      &:hover{
+        transform: scale(1.01);
+      }
+    }
   }
 
   &__tag{

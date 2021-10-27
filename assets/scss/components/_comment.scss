@@ -1,0 +1,104 @@
+.comment{
+
+  &.header{
+    margin-bottom: 10px;
+  }
+
+  &__add{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  &__input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    padding: 5px 6px;
+    color: rgba(255, 255, 255, 0.863);
+  }
+
+  &__form{
+    width: calc(100% - 44px);
+  }
+
+  &__btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  &__list{
+    margin-top: 15px;
+  }
+
+  &__new{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  &__footer{
+    margin-top: 10px;
+  }
+
+  .btn--like{
+    border: none;
+    width: auto;
+    font-size: 12px;
+    padding: 0 !important;
+    justify-content: flex-start;
+    svg{
+      margin-right: 4px;
+    }
+    margin-right: 10px;
+  }
+
+  .btn--repondre{
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0;
+    opacity: .7;
+  }
+
+  &__response{
+    margin-right: 6px;
+  }
+
+  &__name{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.7;
+  }
+
+  &__content{
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  &__time{
+    font-size: 11px;
+    color: gray;
+  }
+
+  &__profil{
+    flex: none;
+    width: 38px;
+    height: 38px;
+    overflow: hidden;
+    border-radius: 50%;
+    @include d-flex;
+    position: relative;
+    img{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    margin-right: 10px;
+  }
+}
