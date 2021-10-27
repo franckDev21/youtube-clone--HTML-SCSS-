@@ -7,9 +7,7 @@
   justify-content: center;  
 }
 @mixin d-flex-b { 
-
   @include d-flex;
-  
   justify-content: space-between;
 }
 @mixin d-flex-e {
