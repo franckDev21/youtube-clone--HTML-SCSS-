@@ -3,6 +3,40 @@
   padding-left: 20px;
   padding-right: 20px;
   justify-content: space-between;
+  
+  &__subjection{
+    margin-top: 20px;
+  }
+  .card{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 8px;
+    &__header{
+      width: 170px ;
+      height: 100px;
+      flex: none;
+    }
+    &__profil{
+      display: none;
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+    &__content{
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    &__footer{
+      overflow: hidden;
+    }
+    &__title{
+      margin-bottom: 6px;
+      font-size: .9rem;
+      line-height: 1.4;
+    }
+  }
+
   &__content{
     width: 70%;
     height: 600px;
